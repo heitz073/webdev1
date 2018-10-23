@@ -57,11 +57,11 @@
 <!--Adding a header for the web map-->
     <div id="header">
 <!--The title for my web map with course name, my name and link-->
-    <h2 style="font-family:courier new;">>My First Leaflet Map: Boston</h2>
-        <h4 style="font-family:courier new;">>GIS 4533, UMD, Fall 2018</h4>
-        <h5 style="font-family:courier new;">>By Jacob Heitzman</h5>
-        <h6 style="font-family:courier new;">><a href="https://leafletjs.com">I built this with Leaflet</a> </h6>
-
+    <center> <h2 style="font-family:courier new;">My First Leaflet Map: Boston</h2>
+        <h4 style="font-family:courier new;">GIS 4533, UMD, Fall 2018</h4>
+        <h5 style="font-family:courier new;">By Jacob Heitzman</h5>
+        <h6 style="font-family:courier new;"> <a href="https://leafletjs.com">I built this with Leaflet</a> </h6>
+</center>
     </div>
     
     
@@ -77,16 +77,13 @@
     <script>
         // initialize the map
         var map = L.map('map').setView([42.35, -71.08], 13);
-
         // load a tile layer
         L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png', {
             attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
             maxZoom: 18,
             minZoom: 10
         }).addTo(map);
-
     </script>
 </body>
 
 </html>
-
